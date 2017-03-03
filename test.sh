@@ -4,19 +4,19 @@
 LEVELA=$?;
 SCORE=0;
 if [ $LEVELA = 0 ]; then
-        SCORE=15;
+        SCORE=50;
 fi
 
 ./lol.phar LevelB;
 LEVELB=$?;
 if [ $LEVELB = 0 ]; then
-        SCORE=$((SCORE+15));
+        SCORE=$((SCORE+60));
 fi
 
 ./lol.phar LevelC;
 LEVELC=$?;
 if [ $LEVELC = 0 ]; then
-        SCORE=$((SCORE+25));
+        SCORE=$((SCORE+90));
 fi
 
 NAME='plop';

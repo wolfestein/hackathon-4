@@ -16,7 +16,7 @@ fi
 ./lol.phar LevelC;
 LEVELC=$?;
 if [ $LEVELC = 0 ]; then
-        SCORE=$((SCORE+100));
+        SCORE=$((SCORE+90));
 fi
 
 NAME='plop';
