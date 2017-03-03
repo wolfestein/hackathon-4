@@ -19,7 +19,19 @@ class Redux
     public function getReductedNumber()
     {
         $result = $this->number;
-        // @TODO
-        return $result;
+        $res = PHP_INT_MAX;
+        $strNum = (string) $result;
+
+        while ($res > 9){
+            $len = strlen($strNum);
+            $res = 0;
+            for ($i = 0; $i < $len; $i++){
+                $res += $strNum[$i];
+
+            }
+        }
+        var_dump($res);
+        die();
+        return $res;
     }
 };
