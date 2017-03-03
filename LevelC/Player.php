@@ -20,9 +20,6 @@ class Player
 
     public function getSteps($partOfTheTrack, $context)
     {
-        //var_dump($context);
-        $instruction = "MMSMM";
-        // @TODO
-        return $instruction;
+        die;
     }
 };
